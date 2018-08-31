@@ -5,7 +5,7 @@ export const files = ({ tagname, page }) => {
   return new Promise((resolve, reject) => {
     return get(endpoints.files(), {
       auth: false,
-      query: { tagname, page },
+      query: { tag: tagname, page },
     })
       .then(response => {
         return resolve(response);
