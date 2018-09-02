@@ -6,6 +6,7 @@ import Column from 'ui/Column';
 import Text from 'ui/Text';
 import { files } from 'api/files';
 import Tags from 'components/Tags';
+import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
 
 const PER_PAGE = 10;
@@ -72,13 +73,15 @@ class Files extends Component {
                 breakLabel={<a href="">...</a>}
                 breakClassName={'break-me'}
                 pageCount={pages}
+                pageClassName={'page-item'}
+                pageLinkClassName={'page-link'}
                 marginPagesDisplayed={2}
                 pageRangeDisplayed={PER_PAGE}
                 onPageChange={({ selected }) =>
                   this.search(tagname, selected + 1)
                 }
                 containerClassName={'pagination'}
-                subContainerClassName={'pages pagination'}
+                subContainerClassName={'page-item'}
                 activeClassName={'active'}
               />
             </Flex>
