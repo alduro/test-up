@@ -1,6 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Files from "components/Files";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Files from 'components/Files';
 
 const Routes = () => (
   <Router>
