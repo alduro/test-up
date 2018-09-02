@@ -75,6 +75,8 @@ class Files extends Component {
                 pageCount={pages}
                 pageClassName={'page-item'}
                 pageLinkClassName={'page-link'}
+                previousLinkClassName={'page-link'}
+                nextLinkClassName={'page-link'}
                 marginPagesDisplayed={2}
                 pageRangeDisplayed={PER_PAGE}
                 onPageChange={({ selected }) =>
